@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  min-height: 100vh;
+}
+
+
+/*==============================Header Styles================================ */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2,
+h3,
+a {
+  color: #34495e;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+.main-nav {
+  position: absolute;
+  top: 50px;
+  background-color: rgba(0,0,0,0.75);
+  height: auto;
+  z-index: 15;
+  display: none;
+}
+
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.logo a {
+  text-align: center;
+}
+
+.main-nav a {
+  color: #ffffff;
+  font-size: 12px;
+  text-align: left;
+}
+
+.main-nav a:hover {
+  color: #718daa;
+}
+
+.header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  background-color: #f4f4f4;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+/*============================================================================*/
+
+/*===============================Slider Styles================================*/
+.item {
+  height: 550px;
+}
+
+.item img {
+  height: 100%;
+  object-fit: cover;
+}
+/*============================================================================*/
+
+/*===============================footer styles================================*/
+
+/*============================================================================*/
+
+/*=================================Others=====================================*/
+.display-none {display:none!important;}
+.display-block {display:block!important;}
+.position-a {position: absolute!important;}
+.position-r {position: relative!important;}
+.top-0 {top: 0!important;}
+.bottom-0 {bottom: 0!important;}
+/*============================================================================*/
+
+/*=================================Media Queries==============================*/
+@media (min-width: 769px) {
+  .header,
+  .main-nav {
+    display: flex;
+    position: unset;
+    background-color: unset;
+  }
+
+  .main-nav a {
+    font-size: .99em;
+    color: #34495e;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .owl-carousel {
+    margin-top: 50px;
+  }
+
+  .d-md-none {display:none!important;}
+}
+
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .d-lg-none {display:none!important;}
+}

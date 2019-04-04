@@ -13,7 +13,6 @@
 
 Auth::routes();
 
-
 Route::get('/hendri', function(){
 	echo 'hendri';
 });

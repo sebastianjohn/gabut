@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ asset('css/dist/hamburgers.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dist/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dist/owl.theme.default.css') }}">
-
+   
 </head>
 <body>
 
@@ -55,7 +55,6 @@
         </header>
 
         @yield('content')
-
     </div>
 
       <!-- Scripts -->
@@ -63,7 +62,13 @@
       <script src="{{ asset('js/dist/jquery-3.3.1.min.js') }}"></script>
       <script src="{{ asset('js/dist/owl.carousel.min.js') }}"></script>
       <script src="{{ asset('js/custom.js') }}"></script>
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+      <script type="text/javascript">
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene, {
+          relativeInput: true
+        });
+      </script>
 </body>
 
 </html>
